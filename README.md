@@ -1,4 +1,4 @@
-# KcTang97.github.io
+# Kc Tang
 
 ### I am an artist. This is my portfolio site.
 
