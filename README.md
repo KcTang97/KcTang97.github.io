@@ -1,5 +1,5 @@
-# Kc Tang
+# Kaicong Tang
 
-### I am an artist. This is my portfolio site.
+### This is my portfolio site.
 
 This is a *README* file for my repository. It is written using **Markdown**.
