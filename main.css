@@ -13,6 +13,7 @@ text-decoration: none;
 }
 
 h1 {
+  float: center;
   padding: 20px 0px 10px 0px;
 }
 
