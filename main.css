@@ -47,3 +47,30 @@ img {
   width: 100%;
   height: 100%;
 }
+
+.topnav {
+  font-family: 'Spicy Rice', cursive;
+  float: center;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  margin-left: 50px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
