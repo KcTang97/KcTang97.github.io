@@ -1,0 +1,25 @@
+body {
+  margin: 30px auto;
+  max-width: 1000px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+h1 {
+  padding: 20px 0px 10px 0px;
+}
+
+/* Center Image */
+img {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.portfolio-itm {
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #f7f7f7;
+}
