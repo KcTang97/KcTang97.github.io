@@ -3,13 +3,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>(Kaicong Tang) | Homepage</title>
+<title>Kaicong Tang | Homepage</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="main2.css">
 </head>
-
-
-
 <body>
     <ul>
       <li><a href = "index.html">Home</a></li>
@@ -18,18 +15,124 @@
           <a href="javascript:void(0)" class = "dropbtn">Projects</a>
         <div class="dropdown-content">
           <a href="Art75Bportfolio.html">Art 75B</a>
-          <a href="Art75Bportfolio.html">Art 74</a>
-          <a href="https://kctang97.github.io/netart2/" target="_blank" class="active">Net Art</a>
+          <a href="Art74portfolio.html">Art 74</a>
         </div>
         <li class = "dropdown">
           <a href="javascript:void(0)" class = "dropbtn">Net Art</a>
         <div class="dropdown-content">
           <a href="https://kctang97.github.io/netart2/" target="_blank" class="active">Art 74 NetArt</a>
+          <a href="https://editor.p5js.org/kaicong.tang@sjsu.edu/present/R87eulRut" target="_blank" class="active">Art 74 Code Art</a>
+          <a href="https://kctang97.github.io/finalproject/" target="_blank" class="active">Art 74 Final Project</a>
         </div>
       </li>
     </ul>
-  <body>
-    <h1> Welcome To My Site </h1>
-  </body>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
 </body>
+
+<style>
+    body{
+      background: url(image/back.jpg) center repeat;
+      background-size: cover;
+    }
+</style>
+
+<body>
+  <h1> Welcome To My Site !_!</h1>
+  <h1>~ Down below are the photo I selected from my album ~</h1>
+    <!-- Container for the image gallery -->
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 9</div>
+      <img src="image/Photo1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 9</div>
+      <img src="image/Photo2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 9</div>
+      <img src="image/Photo3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 9</div>
+      <img src="image/Photo4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 9</div>
+      <img src="image/Photo5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 9</div>
+      <img src="image/Photo6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 9</div>
+      <img src="image/Photo7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 9</div>
+      <img src="image/Photo8.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 9</div>
+      <img src="image/Photo9.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
 </html>
