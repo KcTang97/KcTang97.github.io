@@ -11,6 +11,7 @@ canvas {
   display: block;
   z-index: -1;
 }
+
 a {
 color: #69CBBB;
 text-decoration: none;
@@ -18,30 +19,44 @@ text-decoration: none;
 
 h1 {
   color: Black;
-  font-size: 70px;
+  font-size: 30px;
   text-align: center;
   padding: 20px 0px 10px 0px;
 }
 
 h2 {
+  font-size: 30px;
   text-align: center;
+
 }
 
 h3{
   color: Black;
-  font-size: 30px;
+  font-size: 10px;
   text-align: center;
 }
 
 p{
   color:Black;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 img {
   display: block;
-  margin: 0px auto;
+  margin: 0px;
+}
+
+#myDIV {
+  width: 1920px;
+  height: 920px;
+  background-size: 1920px 920px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  /* background-repeat: no-repeat;
+  background-image: linear-gradient(to right,blue 0%,red 100%),url(image/chain.jpg);
+  background-blend-mode:screen; */
 }
 
 ul {
