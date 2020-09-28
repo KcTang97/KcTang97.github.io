@@ -30,9 +30,14 @@ h2 {
   color: #fff;
   text-align: center;
   font-size: 30px;
-  border-style: ridge;
+  /* border-style: ridge;
   border-color: coral;
   border-width: 10px;
+  background: coral; */
+}
+
+h6{
+  color: #fff;
 }
 
 /* img {
@@ -50,11 +55,11 @@ h3 {
 p {
   text-align: center;
   color: #fff;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 footer {
-  position: absolute;
+  position: relative;
   background-color: #000;
   /* top: 10px; */
   /* left: 0; */
