@@ -1,4 +1,5 @@
 @import url('http://fonts.gooleapis.com/css?family=Poppin:200,300,400,500,600,700,800,900&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@ html, body {
   height: 100%;
   z-index: -1;
 }
+
 canvas {
   /* position: fixed; */
   width: 100%;
@@ -24,7 +26,7 @@ h1 {
   /* z-index: -1; */
 }
 
-h2{
+h2 {
   padding: 20px;
   color: #fff;
   text-align: center;
@@ -37,15 +39,15 @@ img {
   vertical-align: middle;
 }
 
-h3{
+h3 {
   color: #fff;
   font-size: 20px;
   text-align: center;
 }
 
- p{
+p {
   text-align: center;
-  color:#fff;
+  color: #fff;
   line-height: 30px;
 }
 
@@ -58,7 +60,6 @@ footer {
   height: -100%;
   width: 100%;
 }
-
 
 #myDIV {
   width: 100%;
@@ -78,16 +79,16 @@ footer {
   z-index: -1;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
-header{
+header {
   position: fixed;
-  padding: 0;
+  padding: 20px;
   top: 0;
   right: 0;
   width: 100%;
@@ -98,22 +99,20 @@ header{
   z-index: 10000;
 }
 
-header.sticky{
+/* header.sticky {
   padding: 0;
   top: 0;
   right: 0;
-  /* width: 100%; */
   display: flex;
   font-size: 40px;
-  /* justify-content: space-between; */
   align-items: center;
-}
+} */
 
-header ul{
+header ul {
   position: absolute;
-  top: 50%;
+  top: 100%;
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
   /* transform: translate(-50%); */
   justify-content: center;
   align-items: center;
@@ -122,7 +121,7 @@ header ul{
   box-shadow: 0 5px 25px rgba(0, 0, 0, 255);
 }
 
-header ul li{
+header ul li {
   position: relative;
   list-style: none;
   text-align: center;
@@ -134,45 +133,44 @@ header ul li{
   transition: 2s;
 }
 
-header ul li:last-child{
+header ul li:last-child {
   border-bottom: none;
 }
 
-header ul li a{
+header ul li a {
   position: relative;
   text-decoration: none;
-  margin: 0 15px;
   display: block;
-  font-size: 40px;
+  font-size: 30px;
   color: #fff;
   letter-spacing: 2px;
   font-weight: 1000px;
   transition: 3s;
 }
 
-header ul li a .icon{
+header ul li a .icon {
   text-align: center;
   width: 50px;
   height: 50px;
   color: #fff;
   overflow: hidden;
-  margin: 0 auto 10px;
+  /* margin: 0 auto 10px; */
 }
 
-header ul li a .icon .fa{
+header ul li a .icon .fa {
   width: 100%;
   height: 100%;
   line-height: 40px;
-  font-size: 35px;
+  font-size: 30px;
   transition: 0.5s;
   color: #fff;
 }
 
-header ul li a:hover .icon .fa{
+header ul li a:hover .icon .fa {
   transform: translateY(-100%);
 }
 
-header ul li a .name{
+header ul li a .name {
   position: relative;
   height: 20px;
   width: 100%;
@@ -180,7 +178,7 @@ header ul li a .name{
   overflow: hidden;
 }
 
-/* header ul li a .name span{
+header ul li a .name span{
   display: block;
   position: relative;
   color: #000;
@@ -201,25 +199,20 @@ header ul li a .name span:before{
 
 header ul li a:hover .name span{
   transform: translateY(20px);
-} */
-
-
-header.sticky ul li a{
-  padding: 0;
-  top: 0;
-  right: 0;
-  display: flex;
-  font-size: 40px;
-  /* transform: translate(-50%); */
-  /* justify-content: space-between; */
-  align-items: center;
-  transition: 1s;
-  /* z-index: 1000; */
-  /* background: #000; */
-  color: #000;
 }
+  /*
+  header.sticky ul li a {
+    padding: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    transition: 1s;
+    color: #000;
+  } */
 
-.banner{
+.banner {
   position: relative;
   width: 100%;
 }
