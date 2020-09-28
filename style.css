@@ -30,6 +30,9 @@ h2 {
   color: #fff;
   text-align: center;
   font-size: 30px;
+  border-style: ridge;
+  border-color: coral;
+  border-width: 10px;
 }
 
 /* img {
@@ -232,6 +235,6 @@ header ul li a:hover .name span{
   } */
 
 .banner {
-  position: relative;
+  position: absolute;
   width: 100%;
 }

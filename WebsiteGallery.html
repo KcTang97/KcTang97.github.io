@@ -19,97 +19,101 @@
   body {
     background: #313133;
     /* min-height: 200vh; */
-    /* width: 100%; */
   }
 </style>
 
 <body>
-  <div class="grid-container">
-    <header>
-      <ul>
-        <li>
-          <a href="index.html">
-            <div class="icon">
-              <i class="fa fa-home fa-1x" aria-hidden="true"></i>
-              <i class="fa fa-hand-o-up" aria-hidden="true"></i>
-              <div class="name"><span data-text="Home">Home></span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="images.html">
-            <div class="icon">
-              <i class="fa fa-camera" aria-hidden="true"></i>
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-              <div class="name"><span data-text="Image">Images></span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="videos.html">
-            <div class="icon">
-              <i class="fa fa-video-camera fa-1x" aria-hidden="true"></i>
-              <i class="fa fa-headphones" aria-hidden="true"></i>
-              <div class="name"><span data-text="Video">Videos</span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="WebsiteGallery.html">
-            <div class="icon">
-              <i class="fa fa-gamepad fa-1x" aria-hidden="true"></i>
-              <i class="fa fa-keyboard-o" aria-hidden="true"></i>
-              <div class="name"><span data-text="Website">NetArt</span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="statement.html">
-            <div class="icon">
-              <i class="fa fa-user-circle" aria-hidden="true"></i>
-              <i class="fa fa-commenting-o" aria-hidden="true"></i>
-              <div class="name"><span data-text="Statement">Statement</span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="contact.html">
-            <div class="icon">
-              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              <i class="fa fa-info-circle" aria-hidden="true"></i>
-              <div class="name"><span data-text="Contact">Contact</span></div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </header>
-    <section class="banner">
-      <script type="text/javascript">
-        window.addEventListener("scroll", function() {
-          var header = document.querySelector("header");
-          header.classList.toggle("sticky", window.scrollY > 0);
-        })
-      </script>
-    </section>
+  <header>
+    <ul>
+      <li>
+        <a href="index.html">
+          <div class="icon">
+            <i class="fa fa-home fa-1x" aria-hidden="true"></i>
+            <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+            <div class="name"><span data-text="Home">Home></span></div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="images.html">
+          <div class="icon">
+            <i class="fa fa-camera" aria-hidden="true"></i>
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+            <div class="name"><span data-text="Image">Images></span></div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="videos.html">
+          <div class="icon">
+            <i class="fa fa-video-camera fa-1x" aria-hidden="true"></i>
+            <i class="fa fa-headphones" aria-hidden="true"></i>
+            <div class="name"><span data-text="Video">Videos</span></div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="WebsiteGallery.html">
+          <div class="icon">
+            <i class="fa fa-gamepad fa-1x" aria-hidden="true"></i>
+            <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+            <div class="name"><span data-text="Website">NetArt</span></div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="statement.html">
+          <div class="icon">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+            <div class="name"><span data-text="Statement">Statement</span></div>
+          </div>
+        </a>
+      </li>
+      <!-- <li>
+        <a href="contact.html">
+          <div class="icon">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            <div class="name"><span data-text="Contact">Contact</span></div>
+          </div>
+        </a>
+      </li> -->
+    </ul>
+  </header>
+  <section class="banner">
+    <script type="text/javascript">
+      window.addEventListener("scroll", function() {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+  </section>
 </body>
 
 <body>
-  <h2>Net Art - Coding Gallery</h2>
-  <br>
+  <h2>Images Gallary</h2>
   <br>
   <div class="grid-container">
     <div>
+      <br>
+      <br>
       <a href="https://kctang97.github.io/avatarproject/" target="_blank" class="active"><img src="image/avatar.gif" width="500" height="300"></a>
       <h3>Minion Avatar, 800p x 800p, Digital Art, 2019</h3><br>
       <p>The cartoon character I like is minions, so I created a playable minion generated by codes and audio input</p>
       <br>
     </div>
     <div>
+      <br>
+      <br>
       <a href="https://kctang97.github.io/drawingmachine/" target="_blank" class="active"><img src="image/drawing.gif" width="500" height="300"></a>
+      <h3>Drawing Machine, 1200p x 800p, Digital Art, 2019</h3>
       <br>
       <br>
     </div>
     <div>
+       <br>
+       <br>
       <a href="https://kctang97.github.io/webproject/" target="_blank" class="active"><img src="image/scare.gif" width="500" height="300"></a>
       <br>
       <br>
@@ -126,3 +130,8 @@
 </body>
 
 </html>
+
+
+<!-- <div class="grid-container">
+
+</div> -->
