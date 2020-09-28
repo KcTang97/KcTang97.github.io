@@ -52,7 +52,7 @@ p {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   background-color: #000;
   /* top: 10px; */
   /* left: 0; */
