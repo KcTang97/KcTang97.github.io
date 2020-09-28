@@ -1,129 +1,155 @@
-
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
-    <script src="sketch.js"></script>
-    <meta charset="utf-8">
-    <title>Kaicong Tang | Digital Art Gallery</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  </head>
 
-  <style>
-    body{
-      background: #313133;
-      min-height: 200vh;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-  <body>
-    <header>
-      <ul>
-        <li>
-          <a href="index.html">
-            <div class="icon">
-              <i class="fa fa-home fa-1x" aria-hidden="true"></i>
-              <i class="fa fa-hand-o-up" aria-hidden="true"></i>
-              <div class="name"><span data-text="Home">Home></span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="images.html">
-            <div class="icon">
-              <i class="fa fa-camera" aria-hidden="true"></i>
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-              <div class="name"><span data-text="Image">Images></span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="videos.html">
-            <div class="icon">
-              <i class="fa fa-video-camera fa-1x" aria-hidden="true"></i>
-              <i class="fa fa-headphones" aria-hidden="true"></i>
-              <div class="name"><span data-text="Video">Videos</span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="WebsiteGallery.html">
-            <div class="icon">
-              <i class="fa fa-gamepad fa-1x" aria-hidden="true"></i>
-              <i class="fa fa-keyboard-o" aria-hidden="true"></i>
-              <div class="name"><span data-text="Website">NetArt</span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="statement.html">
-            <div class="icon">
-              <i class="fa fa-user-circle" aria-hidden="true"></i>
-              <i class="fa fa-commenting-o" aria-hidden="true"></i>
-              <div class="name"><span data-text="Statement">Statement</span></div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="contact.html">
-            <div class="icon">
-              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              <i class="fa fa-info-circle" aria-hidden="true"></i>
-              <div class="name"><span data-text="Contact">Contact</span></div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </header>
-    <section class="banner">
-      <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-          var header = document.querySelector("header");
-          header.classList.toggle("sticky", window.scrollY >0);
-        })
-      </script>
-    </section>
-  </body>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+  <meta charset="utf-8">
+  <title>Kaicong Tang | Digital Art Gallery</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
 
-    <body>
-      <h2>Images Gallary</h2>
+<style>
+  body {
+    background: #313133;
+    min-height: 200vh;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<body>
+  <header>
+    <ul>
+      <li>
+        <a href="index.html">
+          <div class="icon">
+            <i class="fa fa-home fa-1x" aria-hidden="true"></i>
+            <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+            <div class="name"><span data-text="Home">Home></span></div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="images.html">
+          <div class="icon">
+            <i class="fa fa-camera" aria-hidden="true"></i>
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+            <div class="name"><span data-text="Image">Images></span></div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="videos.html">
+          <div class="icon">
+            <i class="fa fa-video-camera fa-1x" aria-hidden="true"></i>
+            <i class="fa fa-headphones" aria-hidden="true"></i>
+            <div class="name"><span data-text="Video">Videos</span></div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="WebsiteGallery.html">
+          <div class="icon">
+            <i class="fa fa-gamepad fa-1x" aria-hidden="true"></i>
+            <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+            <div class="name"><span data-text="Website">NetArt</span></div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="statement.html">
+          <div class="icon">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+            <div class="name"><span data-text="Statement">Statement</span></div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          <div class="icon">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            <div class="name"><span data-text="Contact">Contact</span></div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <section class="banner">
+    <script type="text/javascript">
+      window.addEventListener("scroll", function() {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+  </section>
+</body>
+
+<body>
+  <h2>Images Gallary</h2>
+  <br>
+  <div class="grid-container">
+    <div><img src="image/1.jpg" width="600" height="400">
+    <br>
+    <br>
+    <br>
+  </div>
+    <div>  <img src="image/1.jpg" width="600" height="400">
       <br>
-      <img src="image/1.jpg" width="600" height="400">
+      <br>
+      <br>
+    </div>
+    <div><img src="image/2.jpg" width="600" height="400">
+    <br>
+    <br>
+    <br>
+    </div>
+    <div>  <img src="image/3.jpg" width="600" height="400">
       <br>
       <br>
       <br>
-      <img src="image/2.jpg" width="600" height="400">
+    </div>
+    <div><img src="image/4.jpg" width="600" height="400">
+    <br>
+    <br>
+    <br>
+    </div>
+    <div>  <img src="image/5.jpg" width="600" height="400">
       <br>
       <br>
       <br>
-      <img src="image/3.jpg" width="600" height="400">
-      <br>
-      <br>
-      <br>
-      <img src="image/4.jpg" width="600" height="400">
-      <br>
-      <br>
-      <br>
-      <img src="image/5.jpg" width="600" height="400">
-      <br>
-      <br>
-      <br>
-      <img src="image/6.png" width="500" height="800">
-      <br>
-      <br>
-      <br>
-      <img src="image/7.png" width="500" height="800">
-      <br>
-      <br>
-      <br>
+    </div>
+    <div><img src="image/6.png" width="500" height="800">
+    <br>
+    <br>
+    <br>
+    </div>
+    <div><img src="image/7.png" width="500" height="800">
+    <br>
+    <br>
+    <br>
+    </div>
+    <div>
       <img src="image/PersonalSpace.png" width="500" height="800">
       <br>
       <br>
       <br>
-  </body>
+    </body>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
 </html>
