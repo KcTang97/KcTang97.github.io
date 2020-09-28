@@ -2,67 +2,99 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Kaicong Tang | Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
-    <meta charset="utf-8">
-    <title>Kaicong Tang | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main2.css" href="style.css">
     <script src="sketch.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
   </head>
 
+  <style>
+    body{
+      background: #313133;
+      min-height: 200vh;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
   <body>
-    <ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "statement.html">Artist Statement</a></li>
-      <li class = "dropdown">
-          <a href="javascript:void(0)" class = "dropbtn">Videos Gallery</a>
-        <div class="dropdown-content">
-          <a href="videos.html">Video Projects</a>
-        </div>
-      </li>
-      <li class = "dropdown">
-        <a href="javascript:void(0)" class = "dropbtn">Digital Gallery</a>
-        <div class="dropdown-content">
-          <a href="digitalimages.html">Digital Art Gallery</a>
-          <a href="https://kctang97.github.io/netart2/" target="_blank" class="active">NetArt</a>
-          <a href="https://editor.p5js.org/kaicong.tang@sjsu.edu/present/R87eulRut" target="_blank" class="active">Code Art</a>
-          <a href="https://kctang97.github.io/finalproject/" target="_blank" class="active">Message Board</a>
-        </div>
-      </li>
-      <li class = "dropdown">
-          <a href="javascript:void(0)" class = "dropbtn">WebArt Gallery</a>
-          <div class="dropdown-content">
-            <a href="WebsiteGallery.html">Website Gallery</a>
-            <a href="https://kctang97.github.io/avatarproject/" target="_blank" class="active">Avatar Project</a>
-            <a href="https://kctang97.github.io/drawingmachine/" target="_blank" class="active">Drawing Machine</a>
-            <a href="https://kctang97.github.io/webproject/" target="_blank" class="active">Webproject</a>
-            <a href="https://kctang97.github.io/synthsound/" target="_blank" class="active">Sound Project</a>
-            <a href="https://kctang97.github.io/game/" target="_blank" class="active">Game Project</a>
-          </div>
-      </li>
-      <li class = "dropdown">
-          <a href="javascript:void(0)" class = "dropbtn">Animation Gallery</a>
-        <div class="dropdown-content">
-          <a href="AnimationProjects.html">Animation Projects</a>
-        </div>
-      </li>
-      <li class = "dropdown">
-          <a href="javascript:void(0)" class = "dropbtn">Animation Series</a>
-        <div class="dropdown-content">
-          <a href="Projectseries.html">Virus</a>
-        </div>
-      </li>
-      <li><a href = "contact.html">Contact</a></li>
-    </ul>
+    <header>
+      <ul>
+        <li>
+          <a href="index.html">
+            <div class="icon">
+              <i class="fa fa-home fa-1x" aria-hidden="true"></i>
+              <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+              <div class="name"><span data-text="Home">Home></span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="digitalimages.html">
+            <div class="icon">
+              <i class="fa fa-camera" aria-hidden="true"></i>
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+              <div class="name"><span data-text="Image">Images></span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="videos.html">
+            <div class="icon">
+              <i class="fa fa-video-camera fa-1x" aria-hidden="true"></i>
+              <i class="fa fa-headphones" aria-hidden="true"></i>
+              <div class="name"><span data-text="Video">Videos</span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="WebsiteGallery.html">
+            <div class="icon">
+              <i class="fa fa-gamepad fa-1x" aria-hidden="true"></i>
+              <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+              <div class="name"><span data-text="Website">NetArt</span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="statement.html">
+            <div class="icon">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <i class="fa fa-commenting-o" aria-hidden="true"></i>
+              <div class="name"><span data-text="Statement">Statement</span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <div class="icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              <div class="name"><span data-text="Contact">Contact</span></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <section class="banner">
+      <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle("sticky", window.scrollY >0);
+        })
+      </script>
+    </section>
   </body>
 
   <style>
     div {
-    background-color: #FFFF;
-    color: Black;
-    padding: 1px;
+    color: White;
+    padding: 10px;
     }
     p{
     -moz-animation: marquee 10s linear infinite;
@@ -90,11 +122,11 @@
     html, body{
       overflow: hidden;
     }
-  </style>
+    </style>
 
-  <body>
-    <div id="BackgroundCanvas" >
-    <p><b>W e l c o m e</b></p>
-    </div>
-  </body>
+    <body>
+      <div id="BackgroundCanvas" >
+      <p><b>W e l c o m e ~ ~</b></p>
+      </div>
+    </body>
 </html>

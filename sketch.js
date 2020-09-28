@@ -4,7 +4,7 @@ var num = 60;
 var mx = [];
 var my = [];
 let w = 1900;
-let h = 840;
+let h = 920;
 let cnv;
 var bgc;
 
@@ -31,7 +31,7 @@ function draw() {
 function Ball() {
   x = random(0, w);
   y = random(0, h);
-  c = color(random(150, 255), random(150, 255), random(150, 255));
+  c = color(random(255), random(255), random(255));
   speed= {
     x:random(-15,15),
     y:random(-15,15)

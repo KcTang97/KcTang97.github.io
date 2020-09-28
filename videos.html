@@ -2,90 +2,174 @@
 
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Kaicong Tang | Videos Gallery </title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
-    <meta charset="utf-8">
-    <title>Kaicong Tang | Videos Gallery </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main2.css" href="style.css">
     <script src="sketch.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
   </head>
 
+  <style>
+    body{
+      background: #313133;
+      min-height: 200vh;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
   <body>
-    <ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "statement.html">Artist Statement</a></li>
-      <li class = "dropdown">
-          <a href="javascript:void(0)" class = "dropbtn">Videos Gallery</a>
-        <div class="dropdown-content">
-          <a href="videos.html">Video Projects</a>
-        </div>
-      </li>
-      <li class = "dropdown">
-        <a href="javascript:void(0)" class = "dropbtn">Digital Gallery</a>
-        <div class="dropdown-content">
-          <a href="digitalimages.html">Digital Art Gallery</a>
-          <a href="https://kctang97.github.io/netart2/" target="_blank" class="active">NetArt</a>
-          <a href="https://editor.p5js.org/kaicong.tang@sjsu.edu/present/R87eulRut" target="_blank" class="active">Code Art</a>
-          <a href="https://kctang97.github.io/finalproject/" target="_blank" class="active">Message Board</a>
-        </div>
-      </li>
-      <li class = "dropdown">
-          <a href="javascript:void(0)" class = "dropbtn">WebArt Gallery</a>
-          <div class="dropdown-content">
-            <a href="WebsiteGallery.html">Website Gallery</a>
-            <a href="https://kctang97.github.io/avatarproject/" target="_blank" class="active">Avatar Project</a>
-            <a href="https://kctang97.github.io/drawingmachine/" target="_blank" class="active">Drawing Machine</a>
-            <a href="https://kctang97.github.io/webproject/" target="_blank" class="active">Webproject</a>
-            <a href="https://kctang97.github.io/synthsound/" target="_blank" class="active">Sound Project</a>
-            <a href="https://kctang97.github.io/game/" target="_blank" class="active">Game Project</a>
-          </div>
-      </li>
-      <li class = "dropdown">
-          <a href="javascript:void(0)" class = "dropbtn">Animation Gallery</a>
-        <div class="dropdown-content">
-          <a href="AnimationProjects.html">Animation Projects</a>
-        </div>
-      </li>
-      <li class = "dropdown">
-          <a href="javascript:void(0)" class = "dropbtn">Animation Series</a>
-        <div class="dropdown-content">
-          <a href="Projectseries.html">Virus</a>
-        </div>
-      </li>
-      <li><a href = "contact.html">Contact</a></li>
-    </ul>
+    <header>
+      <ul>
+        <li>
+          <a href="index.html">
+            <div class="icon">
+              <i class="fa fa-home fa-1x" aria-hidden="true"></i>
+              <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+              <div class="name"><span data-text="Home">Home></span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="digitalimages.html">
+            <div class="icon">
+              <i class="fa fa-camera" aria-hidden="true"></i>
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+              <div class="name"><span data-text="Image">Images></span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="videos.html">
+            <div class="icon">
+              <i class="fa fa-video-camera fa-1x" aria-hidden="true"></i>
+              <i class="fa fa-headphones" aria-hidden="true"></i>
+              <div class="name"><span data-text="Video">Videos</span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="WebsiteGallery.html">
+            <div class="icon">
+              <i class="fa fa-gamepad fa-1x" aria-hidden="true"></i>
+              <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+              <div class="name"><span data-text="Website">NetArt</span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="statement.html">
+            <div class="icon">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <i class="fa fa-commenting-o" aria-hidden="true"></i>
+              <div class="name"><span data-text="Statement">Statement</span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <div class="icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              <div class="name"><span data-text="Contact">Contact</span></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <section class="banner">
+      <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle("sticky", window.scrollY >0);
+        })
+      </script>
+    </section>
   </body>
-
   <body>
-    <h2>! Welcome !</h2>
-      <iframe src="https://player.vimeo.com/video/294274696" width="1920" height="640" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        <h3>Working Process, 1920 x 1080, Digtal Video, 2 min 55 sec, 2018</h3>
-        <p>The process of making a timeframe about fashion and television.</p>
+    <h2>Videos Gallery</h2>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-      <iframe src="https://player.vimeo.com/video/295915081" width="1920" height="640" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/295915081" width="1900" height="25%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <h3>Heart Window, 1920 x 1080, Digital Vdieo, 2 min 56 sec, 2018</h3>
           <p> I used the darkroom to symbolize our/my inner heart, the window as the sight.</p>
           <p>I want the audience to experience the two directly opposite world with the soundtrack.</p>
           <p>Experience the world of an introvert, people with trauma or autism live.</p>
           <p>It is not a work to express negative emotion about these groups to the viewer, </p>
           <p>but to have a different perspective to be able to see the different sides of them, a relaxed and free side.</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <iframe src="https://player.vimeo.com/video/306086922" width="1920" height="640" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      <h3>Fire, 1920 x 1080, Digital Video 2 min 12 sec, 2018</h3>
-      <p>Wildfire, one of the common disasters caused by us humans, only people who experienced know its crucial and pain. </p>
-      <p>Fire, it keeps coldness away from us, but it is dangerous and harmful, wildfire is the best answer.</p>
-      <p>I want to express the seriousness of wildfire and remind people of the harmfulness of fire.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <iframe src="https://player.vimeo.com/video/306086922" width="1900" height="25%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <h3>Fire, 1920 x 1080, Digital Video 2 min 12 sec, 2018</h3>
+          <p>Wildfire, one of the common disasters caused by us humans, only people who experienced know its crucial and pain. </p>
+          <p>Fire, it keeps coldness away from us, but it is dangerous and harmful, wildfire is the best answer.</p>
+          <p>I want to express the seriousness of wildfire and remind people of the harmfulness of fire.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+     <iframe src="https://player.vimeo.com/video/321835639" width="1900" height="25%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <h3>Audio/Video Project, 1920 x 1080, Digital Video, 1 min 30 sec, 2019 </h3>
+          <p>This project is just about a tryout by combining audio and video. </p>
+          <p>In the video, I combine many 4-10 second short videos and play around with the transition effects. </p>
+          <p>I have this idea from some social media where people play their short videos with transition effects, and it looks very cool. </p>
+          <p>So, I try a similar way in this video.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <iframe src="https://player.vimeo.com/video/403100793" width="1900" height="25%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <h3>Sky creatures, 1920 x 1080, Digtal drawing and animation, 17 sec, 2019</h3>
+          <p>Whenever I feel tired and need to relax, I always look up the sky and imagine all the shapes of clouds as creatures.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://player.vimeo.com/video/403102507" width="1900" height="25%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <h3>Dream, 1920 x 1080, Digtal drawing and animation, 1 min 22 sec, 2019</h3>
+          <p> This project is about a dream I have had in many years ago, </p>
+          <p> and I still remember one of the incredible scenes, it is so beautiful and unforgettable, so I decided to animate it.</p>
+          <p> Because the dream was a long time ago and I only remember the last part of it,</p>
+          <p> so I choose to go along with the concept of family moments, the happy moments.</p>
+          <p> Everything that is animated is the sketches I made through Photoshop. </p>
+          <p> For the ending of my animation, I take the idea from class critique in the previous class, so it ends better and emotion.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://player.vimeo.com/video/413715761" width="1900" height="25%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <h3>Virus series, 1920 x 1080, Digtal Animation, 3 min 30 sec, 2020</h3>
+            <p>The animation is a series I am creating specifically for the period we live in now. In this series,</p>
+            <p>I am using both AfterEffect and Photoshop for the entire series due to my artist practice. </p>
+            <p>The content of this is to explore the emotion and reaction of people from everyday news reports we seem on the television and network.</p>
+            <p>Also, the perspective of people like me viewing this health crisis.</p>
+            <p>The style of the animation inspires by the idea of flipbook, which is the very first simple animation I interacted with in my childhood.</p>
+
+
+            <br>
+            <br>
+            <br>
+            
+    <footer class="footer">
+      <p>SJSU Email: kaicong.tang@sjsu.edu</p>
+      <p>Personal Email: kt021415@gmail.com</p>
+      <p>Phone#: (510)610-4578</p>
+    </footer>
   </body>
+
 </html>
